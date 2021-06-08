@@ -1,5 +1,5 @@
 # ------------------------------- DO NOT MODIFY ------------------------------ #
 FROM alpine:latest
 # ------------------------- IMPLEMENT SOLUTION BELOW ------------------------- #
-
-CMD ["echo", "Hello, world!"]
+RUN apk update && apk add fortune
+CMD ["fortune"]
